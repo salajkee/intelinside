@@ -1,0 +1,103 @@
+.contacts {
+   &__title {
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--siniy);
+   }
+   &__telephone {
+        padding: 35px 0 0px 30px;
+        &-text {
+            font-size: 18px;
+            color: #98A5B0;
+            font-weight: 600;
+            position: relative;
+            &::before {
+                content: url(../images/icons/contacts-calling-icon.svg);
+                position: absolute;
+                left: -27px;
+            }
+        }
+        &-numbers {
+            display: flex;
+            flex-direction: column;
+        }
+        &-number {
+            padding-top: 5px;
+            font-size: 18px;
+            color: var(--siniy);
+            font-weight: 600;
+        }
+    }
+    &__email {
+        padding: 35px 0 0 30px;
+        &-text {
+            font-size: 18px;
+            color: #98A5B0;
+            font-weight: 600;
+            padding-bottom: 5px;
+            position: relative;
+            &::before {
+                content: url(../images/icons/contacts-email-icon.svg);
+                position: absolute;
+                left: -27px;
+            }
+        }
+        &-link {
+            font-size: 18px;
+            color: var(--siniy);
+            font-weight: 600;
+        }
+    }
+    &__address {
+        padding: 35px 0 0 30px;
+        &-text {
+            font-size: 18px;
+            color: #98A5B0;
+            font-weight: 600;
+            padding-bottom: 5px;
+            position: relative;
+            &::before {
+                content: url(../images/icons/contacts-location-icon.svg);
+                position: absolute;
+                left: -27px;
+            }
+        }
+        &-link {
+            font-size: 18px;
+            color: var(--siniy);
+            font-weight: 600;
+        }
+    }
+    &__worktime {
+        padding: 35px 0 0 30px;
+        &-text {
+            font-size: 18px;
+            color: #98A5B0;
+            font-weight: 600;
+            padding-bottom: 5px;
+            position: relative;
+            &::before {
+                content: url(../images/icons/contacts-worktime-icon.svg);
+                position: absolute;
+                left: -27px;
+                top: 2px;
+            }
+        }
+        &-time {
+            font-size: 18px;
+            color: var(--siniy);
+            font-weight: 600;
+        }
+    }
+    &__social {
+        padding: 35px 0;
+        display: flex;
+        &-link {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

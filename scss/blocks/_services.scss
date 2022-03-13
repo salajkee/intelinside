@@ -1,0 +1,119 @@
+.services {
+    &__title {
+        padding-top: 50px;
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--siniy);
+    }
+    &__wrapper {
+        padding: 35px 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__item {
+        padding: 20px 15px;
+        max-width: 275px;
+        min-width: 275px;
+        box-shadow: -10px -10px 16px rgba(191, 191, 191, 0.09), 0px 10px 16px rgba(17, 17, 17, 0.08);
+        border-radius: 10px;
+        position: relative;
+        &:hover {
+            .services__item-info {
+                opacity: 1;
+            }
+            .services__name {
+                color: #fff;
+            }
+        }
+        &-info {
+            display: flex;
+            transition: all .3s;
+            opacity: 0;
+            justify-content: center;
+            position: absolute;
+            background-color: rgba(#16314C, 0.8);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            p {
+                color: #fff;
+                margin: auto 10px;
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+        img {
+            border-radius: 12px;
+        }
+    }
+    &__name {
+        padding-top: 20px;
+        margin: auto 0 0;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    &__btn {
+        bottom: 20px;
+        display: block;
+        position: absolute;
+        background: #FFC107;
+        padding: 15px 25px;
+        border-radius: 10px;
+        border: none;
+        color: #212121;
+        cursor: pointer;
+        font-weight: 500;
+        display: none;
+    }
+}
+
+
+.shagirabot {
+    padding: 50px 0;
+    &__title {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--siniy);
+    }
+    &__wrapper {
+        padding-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__item {
+        width: 285px;
+        &-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            span {
+                p {
+                    font-size: 18px;
+                    color: #212121;
+                    font-weight: 500;
+                    &:first-child {
+                        color: #808080;
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        &-text {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}

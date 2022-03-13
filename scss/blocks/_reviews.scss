@@ -1,0 +1,89 @@
+.reviewspage {
+    width: 100%;
+    &__title {
+        padding-top: 35px;
+        font-size: 35px;
+        color: var(--siniy);
+        font-weight: 600;
+    }
+    &__t1 {
+        padding-top: 50px;
+        font-size: 35px;
+        font-weight: 600;
+        color: var(--siniy);
+    }
+    &__feed {
+        padding-top: 30px;
+        label {
+            font-weight: 600;
+            color: #212121;
+            span {
+                color: red;
+            }
+        }
+        input {
+            margin: 20px 0 20px;
+            width: 500px;
+            border: 2px solid #808080;
+            border-radius: 7px;
+            padding: 10px 20px;
+            display: block;
+            outline-color: var(--siniyBtnColor);
+        }
+        textarea {
+            margin-top: 20px;
+            width: 500px;
+            min-height: 200px;
+            resize: vertical;
+            border: 2px solid #808080;
+            border-radius: 7px;
+            padding: 10px 20px;
+            display: block;
+            outline-color: var(--siniyBtnColor);
+        }
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: var(--siniyBtnColor);
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            color: #fff;
+            font-weight: 600;
+            transition: all .2s ease;
+            margin: 30px 0 30px 300px;
+            font-weight: 500;
+            outline-color: var(--siniyBtnColor);
+            border-bottom: 4px solid darken(#057ED6, 10%);
+        }
+    }
+    &__btn {
+        margin: 45px auto;
+        display: flex;
+        align-items: center;
+        padding: 20px 25px;
+        background-color: var(--siniyBtnColor);
+        border-radius: 7px;
+        border: none;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: underline;
+        img {
+            margin-right: 15px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__item {
+        display: none;
+    }
+    &__wrapper {
+        margin-bottom: 50px;
+    }
+}
+
+.hide__review {
+    display: none;
+}
